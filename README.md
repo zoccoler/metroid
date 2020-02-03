@@ -16,7 +16,7 @@
 
 METROID (Morphological Extraction of Transmembrane potential from Regions Of Interest Device) is a computational tool to filter cellular  transmembrane potential signals obtained from low signal-to-noise ratio (SNR) regions of interest (ROIs) in single cell fluorescence images. METROID can be executed as a software with a graphical user interface (Windows only, click [here]() to download the installer) or its code can be run in jupyter notebooks (check the [Examples](/Examples) folder). A simplified flowchart is shown below:
 
-![Metroid_flowchart](/Metroid_flowchart.tif)
+![Metroid_flowchart](/Metroid_flowchart.png)
 
 The user should provide a membrane potential fluorescence video of a single cell, the video frame rate and an input variable that indicates if the expected signal is supposed to be transitory (like an action potential, AP), perdurable like an irreversible electroporation signal) or if there is no signal (only used to check system noise levels). A brightfield snapshot is also required if running the code in jupyter notebook.
 
