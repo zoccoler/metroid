@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/zoccoler/metroid.svg?token=XX3YCzD3oLYQaHHbzfCc&branch=master)](https://travis-ci.com/zoccoler/metroid)
 # Metroid
 
 ## Index
