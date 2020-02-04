@@ -1,0 +1,6 @@
+matplotlib
+scikit-image==0.15.0
+scipy
+scikit-learn
+statsmodels
+ipywidgets
