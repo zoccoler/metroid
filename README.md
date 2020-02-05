@@ -36,8 +36,8 @@ Open Anaconda Navigator, click on "Environments" tab and then click on the "Crea
 
 Your new local environment was created ! You need to add a few more packages. First go back to the Home tab and Install jupyter Notebook. Then, go back to Environments tab, click on the triangle right in front your environment's name and select "Open Terminal". Then type:
 
-`pip install matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets`
-and
+`pip install matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets`    
+and    
 `jupyter nbextension enable --py widgetsnbextension --sys-prefix`
 
 Done! Your environment is now set up! You environment will be active as long as it is selected in the "Environments" tab.
