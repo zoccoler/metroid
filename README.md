@@ -22,7 +22,7 @@ Then, Metroid can either load or generate a cell mask (a binary image file delim
 
 ## Installation
 
-To use Metroid as a software, you just need to download the installer [here](https://figshare.com/s/4bdcdc7826620464adec), follow the straightforward installation procedure and run the application.
+To use Metroid as a software, you just need to download the installer [here](https://doi.org/10.6084/m9.figshare.11344046.v1), follow the straightforward installation procedure and run the application.
 
 To use Metroid by running its code, you need to have python installed (we recommend installing [Anaconda](https://www.anaconda.com/distribution/), one of the most popular Python platforms). Then, [create a virtual environment](#creating-a-virtual-environment), [clone this repository into your machine](#cloningdownloading-metroid-repository), open jupyter notebook and run the code, eventually changing the default parameters to your data.
 
