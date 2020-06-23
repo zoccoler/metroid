@@ -67,13 +67,14 @@ You can clone this repository to your local machine by clicking on the "Clone or
 
 ### Metroid Software (Windows)
 
-Run Setup_METROID.exe and follow the installation procedure. After that, open METROID executable file and the mais interface should appear (it may take a couple of minutes the first time). We suggest running the Examples first ('File->Load Default Data' and choose a video) to explore the software options.
+Run Setup_METROID.exe and follow the installation procedure. After that, open METROID executable file and the main interface should appear (it may take a couple of minutes the first time). We suggest running the Examples first ('File->Load Default Data' and choose a video) to explore the software options.
 
-Overall, load your data, click on 'MESS' button to generate ROIs and then click on 'Run' button to filter ROI signals using the parameters shown in the Parameters Box. Done! Now, double-click over each ROI to see the results! You can also 'Save ROIs' to save the generated ROIs as an image file (label_ROIs.tif) with each pixel having the corresponding ROI label number, and 'Save Outputs' to save the filtered signals both as images and as a .csv file, which can be imported by other softwares such as Microsoft Excel or MATLAB.
+Overall, load your data, click on 'MESS' button to generate ROIs and then click on 'Run' button to filter ROI signals using the parameters shown in the Parameters Box. Done! 
+To see the results, double-click over each ROI! You can also 'Save ROIs' to save the generated ROIs as an image file (label_ROIs.tif) with each pixel having the corresponding ROI label number, and 'Save Outputs' to save the filtered signals both as images and as a .csv file, which can be imported by other softwares such as Microsoft Excel or MATLAB.
 
 ### Metroid notebooks
 
-Now you may go to Home tab, Launch jupyter Notebook, navigate to Metroid folder and run a notebook (for example, open [Example_Cell1.ipynb](/Examples/Example_Cell1.ipynb) and either run it cell by cell or click 'Cell->Run All'). Also, each part of Metroid also contains an exmaple that you can run inside the respective notebook (for example, you can automatically or manually draw a cell mask by running [MESS.ipynb](/MESS.ipynb).
+Go to Home tab, Launch jupyter Notebook, navigate to Metroid folder and run a notebook (for example, open [Example_Cell1.ipynb](/Examples/Example_Cell1.ipynb) and either run it cell by cell or click 'Cell->Run All'). Also, each part of Metroid also contains an example that you can run inside the respective notebook (for example, you can automatically or manually draw a cell mask by running [MESS.ipynb](/MESS.ipynb)).
 
 ## License
 
