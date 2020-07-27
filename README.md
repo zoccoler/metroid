@@ -8,6 +8,10 @@
 
 [Usage](#usage)
 
+[Citing METROID](#citing-metroid)
+
+[Funding](#funding)
+
 [License](#license)
 
 ## Overview
@@ -36,7 +40,7 @@ Open Anaconda Navigator, click on "Environments" tab and then click on the "Crea
 
 Your new local environment was created ! You need to add a few more packages. First go back to the Home tab and Install jupyter Notebook. Then, go back to Environments tab, click on the triangle right in front your environment's name and select "Open Terminal". Then type:
 
-`pip install matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets`    
+`pip install numpy matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets`    
 and    
 `jupyter nbextension enable --py widgetsnbextension --sys-prefix`
 
@@ -46,7 +50,7 @@ Done! Your environment is now set up! You environment will be active as long as 
 
 Open Anaconda Prompt or a Terminal (in Linux) and type (you may replace "metroid_env" by another name for your local environment):
 
-`conda create -n metroid_env python=3.6 matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets` 
+`conda create -n metroid_env python=3.6 numpy matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets` 
 
 When conda asks you to proceed, type `y` or `yes`.
 `conda command not found`? You should [add anaconda to your path](https://askubuntu.com/questions/908827/variable-path-issue-conda-command-not-found). 
@@ -75,6 +79,14 @@ To see the results, double-click over each ROI! You can also 'Save ROIs' to save
 ### Metroid notebooks
 
 Go to Home tab, Launch jupyter Notebook, navigate to Metroid folder and run a notebook (for example, open [Example_Cell1.ipynb](/Examples/Example_Cell1.ipynb) and either run it cell by cell or click 'Cell->Run All'). Also, each part of Metroid also contains an example that you can run inside the respective notebook (for example, you can automatically or manually draw a cell mask by running [MESS.ipynb](/MESS.ipynb)).
+
+## Citing METROID
+
+Zoccoler, M., de Oliveira, P.X. METROID: an automated method for robust quantification of subcellular fluorescence events at low SNR. BMC Bioinformatics 21, 332 (2020). https://doi.org/10.1186/s12859-020-03661-9
+
+## Funding
+
+This project was funded by [São Paulo Research Foundation (FAPESP)](http://www.fapesp.br/en/) grant Proc. N 2011/51199–6 and [Coordination of Improvement of Higher Education Personnel (CAPES)](https://www.capes.gov.br/).
 
 ## License
 
