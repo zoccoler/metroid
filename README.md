@@ -38,11 +38,11 @@ We recommend creating a new virtual environment because Metroid runs with certai
 
 Open Anaconda Navigator, click on "Environments" tab and then click on the "Create" button. Give your new environment a name, make sure that the "Python" option is checked and, from the dropdown list select "3.6", then click "Create".
 
-Your new local environment was created ! You need to add a few more packages. First go back to the Home tab and Install jupyter Notebook. Then, go back to Environments tab, click on the triangle right in front your environment's name and select "Open Terminal". Then type:
+Your new local environment was created ! You need to add a few more packages. First go back to the Home tab and Install jupyter Notebook (we used version 6.0.0). Then, go back to Environments tab, click on the triangle right in front your environment's name and select "Open Terminal". Then type:
 
-`pip install numpy matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets`    
+`pip install -r requirements.txt`    
 and    
-`jupyter nbextension enable --py widgetsnbextension --sys-prefix`
+`jupyter nbextension enable --user --py widgetsnbextension --sys-prefix`
 
 Done! Your environment is now set up! You environment will be active as long as it is selected in the "Environments" tab.
 
@@ -50,18 +50,23 @@ Done! Your environment is now set up! You environment will be active as long as 
 
 Open Anaconda Prompt or a Terminal (in Linux) and type (you may replace "metroid_env" by another name for your local environment):
 
-`conda create -n metroid_env python=3.6 numpy matplotlib scikit-image==0.15.0 scipy scikit-learn statsmodels ipywidgets` 
+`conda create -n metroid_env python=3.6` 
 
 When conda asks you to proceed, type `y` or `yes`.
 `conda command not found`? You should [add anaconda to your path](https://askubuntu.com/questions/908827/variable-path-issue-conda-command-not-found). 
 
-Done! Your environment is now set up! Now let's activate it by typing the following:
+Done! Your environment is now set up! Let's activate it by typing the following:
 
 `conda activate metroid_env`
 
 (remember, if you chose a different name, you should replace `metroid_env` by your environment's name)
-You should see your environment's name now in front of each new line. Then type:    
-`jupyter nbextension enable --py widgetsnbextension --sys-prefix`
+You should see your environment's name now in front of each new line. Then type:  
+`conda install -r requirements.txt`
+`jupyter nbextension enable --user --py widgetsnbextension --sys-prefix`
+
+To launch the notebooks, type:
+
+`jupyter notebook`
 
 #### Cloning/Downloading Metroid Repository
 
@@ -79,6 +84,8 @@ To see the results, double-click over each ROI! You can also 'Save ROIs' to save
 ### Metroid notebooks
 
 Go to Home tab, Launch jupyter Notebook, navigate to Metroid folder and run a notebook (for example, open [Example_Cell1.ipynb](/Examples/Example_Cell1.ipynb) and either run it cell by cell or click 'Cell->Run All'). Also, each part of Metroid also contains an example that you can run inside the respective notebook (for example, you can automatically or manually draw a cell mask by running [MESS.ipynb](/MESS.ipynb)).
+Since METROID uses curve fitting algorithms, it is possible that convergence errors arise like "SVD did not converge". 
+Tip: Just rerunning the same cell may solve this error, otherwise photobleaching should be compensated externally by another method.
 
 ## Citing METROID
 
