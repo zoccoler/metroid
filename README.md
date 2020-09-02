@@ -62,6 +62,7 @@ Done! Your environment is now set up! Let's activate it by typing the following:
 (remember, if you chose a different name, you should replace `metroid_env` by your environment's name)
 You should see your environment's name now in front of each new line. Then type:  
 `conda install -r requirements.txt`
+
 `jupyter nbextension enable --user --py widgetsnbextension --sys-prefix`
 
 To launch the notebooks, type:
@@ -84,6 +85,7 @@ To see the results, double-click over each ROI! You can also 'Save ROIs' to save
 ### Metroid notebooks
 
 Go to Home tab, Launch jupyter Notebook, navigate to Metroid folder and run a notebook (for example, open [Example_Cell1.ipynb](/Examples/Example_Cell1.ipynb) and either run it cell by cell or click 'Cell->Run All'). Also, each part of Metroid also contains an example that you can run inside the respective notebook (for example, you can automatically or manually draw a cell mask by running [MESS.ipynb](/MESS.ipynb)).
+
 Since METROID uses curve fitting algorithms, it is possible that convergence errors arise like "SVD did not converge". 
 Tip: Just rerunning the same cell may solve this error, otherwise photobleaching should be compensated externally by another method.
 
